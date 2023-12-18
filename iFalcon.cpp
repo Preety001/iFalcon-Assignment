@@ -1,4 +1,4 @@
-class Solution {
+class Assignment {
 public:
     bool isValid(string s)
     {
