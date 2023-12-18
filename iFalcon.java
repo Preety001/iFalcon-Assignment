@@ -7,14 +7,16 @@ public class Assignment {
         for (char ch : s.toCharArray()) {
             if (ch == '(' || ch == '{' || ch == '[') {
                 stack.push(ch);
-            } else {
+            } 
+            else {
                 if (stack.empty()) {
                     return false;
                 }
 
                 if ((ch == ')' && stack.peek() == '(') || (ch == '}' && stack.peek() == '{') || (ch == ']' && stack.peek() == '[')) {
                     stack.pop();
-                } else {
+                } 
+                else {
                     return false;
                 }
             }
